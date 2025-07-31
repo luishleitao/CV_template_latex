@@ -1,0 +1,48 @@
+\ProvidesPackage{cvstyle}
+
+% ===== PACKAGES =====
+\usepackage[a4paper,margin=0cm]{geometry}
+\usepackage{paracol}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+
+% ===== COLORS =====
+\definecolor{maintext}{HTML}{2C3E50}
+\definecolor{accent}{HTML}{8A784E}
+\definecolor{sidebar}{HTML}{E7EFC7}
+
+% ===== LAYOUT =====
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+\columnratio{0.33}
+\setlength{\columnsep}{0.4cm}
+
+% ===== COMMANDS =====
+\newcommand{\sectiontitle}[1]{\vspace{0.5cm}{\Large\bfseries #1}\\[0.4em]}
+
+\newcommand{\entry}[3]{%
+\vspace{-0.4cm}
+  \begin{tabular*}{0.96\linewidth}{@{\extracolsep{\fill}}lr}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\\
+  {\itshape #3}\\[-0.4em]
+}
+
+\newenvironment{bulletlist}{%
+  \vspace{-0.5cm}
+  \begin{list}{$\bullet$}{%
+    \setlength{\leftmargin}{1em}%
+    \setlength{\rightmargin}{20pt}%
+    \setlength{\listparindent}{0pt}%
+    \setlength{\itemindent}{0pt}%
+    \setlength{\itemsep}{0.2em}%
+    \setlength{\parsep}{0pt}%
+  }%
+}{\end{list} \vspace{0.3cm}}
+
+\newcommand{\cvbullet}[1]{\item #1}

@@ -1,0 +1,122 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{cvstyle}
+
+% ===== DOCUMENT =====
+\begin{document}
+
+% Sidebar background
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[sidebar] (current page.north west) rectangle ([xshift=0.33\paperwidth]current page.south west);
+\end{tikzpicture}
+
+\begin{paracol}{2}
+
+% ===== LEFT COLUMN =====
+\switchcolumn[0]*
+\vspace{0.5cm}
+\begin{minipage}[t]{\dimexpr 0.33\paperwidth - 3em}
+  \hspace*{1.5em}
+  \begin{minipage}[t]{\linewidth}
+    \scalebox{4}{\parbox{}{\centering\bfseries Luís\\[-3pt]Leitão}}\\
+    \vspace{0.5cm}
+
+    \textsc{MSc Student in Engineering Physics}\\
+    \vspace{0.8cm}
+
+    {\Large\textbf{Contact}}\\[0.8em]
+    \begin{tabular}{@{}l@{\hskip 0.6em}l}
+    {\Large\faPhone} & +351 939933931 \\[0.2em]
+    {\large\faEnvelope} & \href{mailto:luish.leitao@gmail.com}{luish.leitao@gmail.com} \\[0.2em]
+    {\Large\faGlobe} & \href{https://luishleitao.com}{luishleitao.com} \\[0.2em]
+    {\Large\faLinkedinSquare} & \href{https://linkedin.com/in/luishleitao}{linkedin.com/in/luishleitao} \\[0.2em]
+    {\Large\faGithub} & \href{https://github.com/luishleitao}{github.com/luishleitao} \\[0.2em]
+    {\hspace{0.07cm}\Large\faMapMarker} & Lisbon, Portugal \\
+    \end{tabular}
+    
+    \vspace{0.8cm}
+    {\Large\textbf{About me}}\\[0.2em]
+    I'm passionate about applying mathematics, physics and machine learning to uncover patterns and model social phenomena: from financial markets and economic behaviour to language and cultural evolution. I’m drawn to problems whose solutions can make everyday life a little easier.
+    Want to know more about me? Visit my website!\\
+
+    \vspace{0.8cm}
+    {\Large\textbf{Technical skills}}\\[0.2em]
+    \textbf{Programming:} Python, SQL, LaTeX, Matlab\\
+    \textbf{Tools:} Git, VS Code, Linux, macOS, Windows \\
+
+    \vspace{0.8cm}
+    {\Large\textbf{Languages}}\\[0.2em]
+    Portuguese - C2 (native)\\
+    English - C1\\
+    French - A2 (learning)\\
+
+    \vspace{0.8cm}
+    {\Large\textbf{Interests}}\\[0.2em]
+    Reading, running, cycling, swimming, spearfishing, investing, music, surfing
+  \end{minipage}
+\end{minipage}
+
+\vfill
+
+% ===== RIGHT COLUMN =====
+\switchcolumn
+
+\sectiontitle{\textcolor{accent}{Education}}
+
+\entry{Master’s degree in Engineering Physics}{Sep 2023 -- Present}{FCUL – University of Lisbon}
+\begin{bulletlist}
+  \cvbullet{Currently pursuing the second year of the Master’s degree with coursework spanning optics, nuclear physics, control theory, and complex systems (with a strong focus on econophysics).}
+    \cvbullet{Participation in the hands-on course at the JSI TRIGA research nuclear reactor, in Ljubljana, covering techniques for neutron detection.}
+\end{bulletlist}
+
+\entry{Erasmus+ Exchange Student}{Sep 2024 -- Jan 2025}{Sorbonne Universit\'e, Paris}
+\begin{bulletlist}
+  \cvbullet{Integrated within the Master’s in Physics, specializing in machine learning.}
+\end{bulletlist}
+
+\entry{Bachelor’s degree in Engineering Physics}{Sep 2019 -- Aug 2022}{FCT - NOVA}
+\begin{bulletlist}
+  \cvbullet{Developed strong foundations in mathematics, classical and quantum physics, electronics, and programming.}
+  \cvbullet{Engaged in the student association, where I organized multiple workshops, lectures and interviews. As Treasurer, managed the budget and bank account, and prepared detailed financial reports.}
+\end{bulletlist}
+
+\vspace{-0.4cm}
+\sectiontitle{\textcolor{accent}{Experience}}
+
+\entry{Research Fellow}{Mar 2023 -- Present}{NUC-RIA, LIP}
+\begin{bulletlist}
+  \cvbullet{Supported by an 18-month FCT research grant, this work involved the calculation of atomic parameters for heavy ions and astrophysical simulations for kilonovae nucleosynthesis.}
+  \cvbullet{Supervised two bachelor's students during a summer internship focused on developing a database and a corresponding website for data access.}
+  \cvbullet{Publication on \textit{Physical Review A}: R. F. Silva, A. Flörs, L. Leitão, “Systematic Bayesian Optimization for Atomic Structure Calculations of Heavy Elements”}
+  \cvbullet{Presented 1 talk and 3 posters at conferences including: IBER2023, Russbach 2024, FÍSICA2024 and NIC2025.}
+  \cvbullet{Python \textbar{} FAC (relativistic atomic structure code) \textbar{} SQL \textbar{} HTML}
+\end{bulletlist}
+
+\entry{Math and physics tutor}{Jan 2020 -- Sep 2024}{\vspace{-0.4cm}}
+\begin{bulletlist}
+  \cvbullet{Math and physics tutor for high school students, balancing 4 to 9 hours per week alongside academic and research commitments.}
+\end{bulletlist}
+
+\entry{Intern}{Jan 2022 -- Mar 2022}{Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o}
+\begin{bulletlist}
+  \cvbullet{Research on a sample of high redshift galaxies spectra taken from the MOSDEF survey, using Python and the FADO tool with the goal of predicting the contribution of nebulae to the global makeup of the galaxies.}
+\end{bulletlist}
+
+\vspace{-0.4cm}
+\sectiontitle{\textcolor{accent}{Volunteering}}
+
+\entry{School Assitant}{Sep 2022 -- Oct 2022}{Escola Humberto Braima Sambu, Guiné Bissau}
+\begin{bulletlist}
+  \cvbullet{Supported education and operations during school holidays.}
+\end{bulletlist}
+
+\entry{Scout}{Sep 2011 -- Aug 2022}{CNE}
+\begin{bulletlist}
+    \cvbullet{Member for 11 years, leading teams and participating in various volunteer initiatives.}
+\end{bulletlist}
+
+
+
+
+
+\end{paracol}
+\end{document}
