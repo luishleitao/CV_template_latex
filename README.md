@@ -8,7 +8,6 @@ This is a clean, customizable Curriculum Vitae template written in **LaTeX**, de
   
 - Easy to modify and extend   
 - Supports multiple sections: Education, Experience, Skills, Projects, Publications, etc.  
-- A4 page format
 
 ## Files
 
